@@ -1,0 +1,17 @@
+import math
+
+def hipotenus(horizontal, vertical):
+    return math.sqrt(horizontal*horizontal + vertical*vertical)
+
+def hesapla(horizontal, vertical, uzunluk):
+    print(f"Uzunluk hesabı: {horizontal} ve {vertical} noktaları arasındaki hipotenüs: {uzunluk:.2f}")
+
+def main():
+    horizontal = 3
+    vertical = 4
+    sonuc = hipotenus(horizontal, vertical)
+    
+    hesapla(horizontal, vertical, sonuc)
+    
+if __name__ == "__main__":
+    main()
